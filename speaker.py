@@ -18,27 +18,8 @@ def listen(recognizer, audio):
 
 #대답부
 def answer(input_text):
-    answer_text = ''
-    if '안녕' in input_text:
-        answer_text = '안녕하세요, 반갑습니다.'
-    elif '날씨' in input_text:
-        answer_text = '오늘의 서울 기온은 20도입니다. 맑은 하늘이 예상됩니다.'
-    elif '환율' in input_text:
-        answer_text = '원 달러 환율은 1200원입니다.'
-    elif '고마워' in input_text:
-        answer_text = '별말씀을요.'
-    elif '휴학' in input_text:
-        answer_text = '힘든 순간은 성장의 자양분이 되어줄 거랍니다. 조금만 더 힘내요!'   
-    elif '종료' in input_text:
-        answer_text = '다음에 또 만나요.'
-        stop_listening(wait_for_stop = False)
-    elif '홍대입구' in input_text:
-        answer_text = '뉴진스의 하입보이요'
-    elif '별로네' in input_text:
-        answer_text = '어디서 평가질이야? 니가 나 개발했잖아 이진우. 욕해도 소용없어'
-    else:
-        answer_text = '죄송해요. 진우 개발자님이 실력이 부족해서 제가 답변을 못드리겠어요'
-    speak(answer_text)
+    pass #구현 나중에
+
     
 # TTS기능 구현
 def speak(text):
